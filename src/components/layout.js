@@ -9,6 +9,11 @@ import '../assets/styles/fonts.scss'
 import '../assets/styles/bootstrap.scss'
 import '../assets/styles/layout.scss'
 
+const appMeta = [
+  { name: 'description', content: 'Sample' },
+  { name: 'keywords', content: 'sample, something' },
+]
+
 const Layout = ({ children, data }) => (
   <StaticQuery
     query={graphql`
@@ -22,14 +27,9 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
-      <div className="container">
+      <Helmet title={data.site.siteMetadata.title} meta={appMeta} />
+      <div id="app">
+        <div className="container">
           <div className="row justify-content-center align-items-center">
             <div className="col-12 col-sm-11">
               <div className="box">
@@ -44,6 +44,7 @@ const Layout = ({ children, data }) => (
             </div>
           </div>
         </div>
+      </div>
       </>
     )}
   />
