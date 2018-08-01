@@ -1,15 +1,6 @@
-$primary: #464646;
-$primary-dark: #232323;
-$primary-light: #676767;
-
-$secondary: #D2FF28;
-$secondary-dark: #596b5c;
-$secondary-light: #a3b1a5;
-
+$primary: #D2FF28;
+$secondary: #5851ff;
 $alternative: #e7e8e9;
-$alternative-dark: #888;
-$alternative-light: #dedede;
-
 $foreground: #FFF;
 
 $info: #000;
@@ -17,14 +8,10 @@ $success: #000;
 $warning: #000;
 $danger: #000;
 
+$font-family: 'Hind Madurai', sans-serif;
+
 $theme-colors: (
   "primary": $primary,
-  "primary-dark": $primary-dark,
-  "primary-light": $primary-light,
   "secondary": $secondary,
-  "secondary-dark": $secondary-dark,
-  "secondary-light": $secondary-light,
-  "alternative": $alternative,
-  "alternative-dark": $alternative-dark,
-  "alternative-light": $alternative-light
+  "alternative": $alternative
 );

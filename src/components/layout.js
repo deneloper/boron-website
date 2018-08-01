@@ -29,20 +29,11 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-      <div className="container">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-12 col-sm-11">
-              <div className="box">
-                <Header siteTitle={data.site.siteMetadata.title} />
-                <section className="content">
-                  {children}
-                </section>
-                <footer>
-                  Boron is created and maintained by <a href="http://www.deneloper.com" target="_blank">Deneloper</a>
-                </footer>
-              </div>
-            </div>
-          </div>
+        <div className="container">
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <section className="main">
+            {children}
+          </section>
         </div>
       </>
     )}
