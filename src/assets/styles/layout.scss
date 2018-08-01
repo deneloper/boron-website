@@ -1,0 +1,215 @@
+@import './variables.scss';
+
+#app {
+  padding:40px 0;
+}
+
+html, body {
+  height:100%;
+  font-size:16px;
+  background: $alternative-dark url('/images/bg.svg') repeat;
+  font-family: "Salesforce Sans";
+  padding:0px 0px 0 0;
+
+  @media (max-width: 768px) {
+    padding:10px 0;
+  }
+}
+
+.container {
+  @media (max-width: 768px) {
+    padding:0;
+  }
+
+  & > .row {
+    @media (max-width: 768px) {
+      margin:0;
+    }
+  }
+}
+
+.box {
+  background: $foreground;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.logo {
+  a {
+    font-weight: bold;
+    font-size:3rem;
+
+    &:hover {
+      text-decoration: none;
+      text-shadow: -3px -2px 0px $secondary;
+    }
+
+    span {
+      text-shadow: -3px -2px 0px $secondary;
+      display: inline-block;
+      border-bottom:3px solid $primary;
+    }
+  }
+}
+
+header {
+  padding:100px 100px 0;
+
+  @media (max-width: 768px) {
+    padding:15px 25px 0;
+  }
+}
+footer {
+  font-size:0.8rem;
+  opacity:0.6;
+  padding:50px 100px;
+
+  @media (max-width: 768px) {
+    padding:15px 25px;
+  }
+}
+
+.fit-sides {
+  padding-right:100px;
+  padding-left:100px;
+
+  @media (max-width: 768px) {
+    padding-left:25px;
+    padding-right:25px;
+  }
+}
+
+.content {
+  padding-top:25px;
+
+  .welcome {
+    font-size:1.8rem;
+    font-weight: 300;
+    color: $primary-light;
+    padding-bottom:25px;
+
+    @media (max-width: 768px) {
+      font-size:1.4rem;
+    }
+  }
+
+  .small-box {
+    border-radius: 5px;
+    padding:25px;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+    background: $foreground;
+    display: block;
+    font-size:1.07rem;
+    font-weight: 700;
+    transition: all 0.2s;
+    height:100%;
+
+    @media (max-width: 768px) {
+      margin-bottom:15px;
+    }
+
+    img {
+      min-width: 45px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: 0 1px 3px 1px rgba(60,64,67,.2), 0 2px 8px 4px rgba(60,64,67,.1);
+      background: rgba($foreground, 0.95);
+      margin-top:-2px;
+    }
+
+    .info {
+      font-weight: 400;
+      font-size:0.85rem;
+      padding-top:5px;
+      opacity:0.7;
+    }
+
+    .col-auto {
+      padding-right:0px;
+    }
+  }
+}
+
+
+.content-boxes {
+  background: $secondary;
+  border-top:1px solid darken($secondary, 10%);
+  border-bottom:1px solid darken($secondary, 10%);
+  padding:25px 100px;
+
+  @media (max-width: 768px) {
+    padding:15px 15px;
+  }
+}
+
+
+.page-list {
+  .page {
+    padding:15px 15% 15px 0;
+    border-bottom:1px solid $alternative;
+
+    h2 {
+      font-size:1.5rem;
+      font-weight: 700;
+
+      a {
+        color: $primary;
+      }
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    &:last-child {
+      border:none;
+    }
+
+    .children {
+      margin-left:0;
+      padding-left:20px;
+
+      a {
+        font-size:1.1rem;
+        border-bottom:3px solid $alternative;
+        text-decoration: none;
+
+        &:hover {
+          border-color: $secondary;
+        }
+        & + a {
+          margin-left:10px;
+        }
+      }
+    }
+  }
+}
+
+.markdown-content {
+  border-top:1px solid $alternative;
+  padding-top:25px;
+
+  h1 {
+    font-size:2.2rem;
+    font-weight: 900;
+  }
+  h2 {
+    font-size:1.7rem;
+    font-weight: 700;
+  }
+  p {
+    font-size:1.1rem;
+  }
+  pre {
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
+    padding:15px;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  blockquote {
+    border-left:5px solid $secondary;
+    padding-left:15px;
+  }
+}
