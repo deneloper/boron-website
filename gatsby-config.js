@@ -1,6 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Boron',
+    title: 'Boron'
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ["assets/styles"]
+      }
+    }
+  ]
 }
