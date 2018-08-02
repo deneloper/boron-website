@@ -8,7 +8,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-7">
-            <h1>Boron is administration interface for your applications</h1>
+            <h1>Boron is administration interface for your web applications</h1>
           </div>
           <div className="col">
             <div className="screenshot">
