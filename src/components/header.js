@@ -13,6 +13,7 @@ const Header = ({ siteTitle }) => (
         <nav className="col">
           <Link to="/about">About</Link>
           <Link to="/docs">Documentation</Link>
+          <Link to="/news">News</Link>
         </nav>
       </div>
     </div>
