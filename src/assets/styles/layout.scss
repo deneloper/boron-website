@@ -2,25 +2,83 @@
 
 html, body {
   font-family: $font-family;
-  background: $secondary;
+  background: lighten($secondary, 4%);
 }
 
 header {
+  border-bottom:1px solid darken($secondary, 5%);
+  padding:10px 0;
+  background: $secondary;
+
   .logo {
-    font-size: 4rem;
+    font-size: 1.5rem;
     font-weight: bold;
 
     a {
-      color: $foreground;
+      color: $primary;
+    }
+  }
+
+  nav {
+    text-align: right;
+
+    a {
+      &+a {
+        margin-left:10px;
+      }
     }
   }
 }
 
 section.main {
-  p.welcome {
-    font-size:2rem;
+  border-top:1px solid lighten($secondary, 5%);
+}
+
+.spotlight {
+  border-bottom:1px solid darken($secondary, 5%);
+  padding:35px 0;
+  background: $secondary;
+
+  h1 {
+    font-size:3.5rem;
+    font-weight: bold;
+    color: $alternative;
+  }
+  p {
+    font-size:1.8rem;
     font-weight: lighter;
     max-width: 60%;
     color: $primary;
+    margin:0;
+  }
+}
+
+.page-title {
+  background: $foreground;
+  border-bottom:1px solid darken($secondary, 5%);
+  padding:25px 0px;
+
+  h1 {
+    margin:0px; padding:0px;
+    font-size:2.2rem;
+    font-weight: bold;
+    color: $alternative;
+  }
+}
+
+.boxes {
+  padding:25px 0;
+
+  .box {
+    padding:25px;
+    box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 2px 1px rgba(60,64,67,.16);
+    background: $foreground;
+    border-radius: 3px;
+
+    h2 {
+      color: $alternative;
+      margin:0px; padding:0px;
+      font-size:1.25rem;
+    }
   }
 }

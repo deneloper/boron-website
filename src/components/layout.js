@@ -34,12 +34,11 @@ const Layout = ({ children, data }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         />
-        <div className="container">
-          <Header siteTitle={data.site.siteMetadata.title} />
-          <section className="main">
-            {children}
-          </section>
-        </div>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <section className="main">
+          {children}
+        </section>
+
       </>
     )}
   />
