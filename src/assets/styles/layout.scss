@@ -15,7 +15,7 @@ header {
     font-weight: bold;
 
     a {
-      color: $primary;
+      color: $alternative;
     }
   }
 
@@ -42,7 +42,8 @@ section.main {
   h1 {
     font-size:3.5rem;
     font-weight: bold;
-    color: $alternative;
+    color: $primary;
+    text-shadow: 2px 2px 0px #FFF;
   }
   p {
     font-size:1.8rem;
@@ -62,7 +63,7 @@ section.main {
     margin:0px; padding:0px;
     font-size:2.2rem;
     font-weight: bold;
-    color: $alternative;
+    color: $primary;
   }
 }
 
