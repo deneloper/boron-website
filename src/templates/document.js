@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import DocumentationNav from '../components/documentation-nav'
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const doc = data.markdownRemark
   return (
     <Layout>
       <div className="page-title">
@@ -18,8 +18,10 @@ export default ({ data }) => {
             <DocumentationNav />
           </aside>
           <div className="col">
-            <h2>{post.frontmatter.title}</h2>
-            <div dangerouslySetInnerHTML={{ __html: post.html }}  />
+            <div className="documentation-content">
+              <h2 className="documentation-title">{doc.frontmatter.title}</h2>
+              <div dangerouslySetInnerHTML={{ __html: doc.html }}  />
+            </div>
           </div>
         </div>
       </main>

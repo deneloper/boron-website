@@ -126,3 +126,21 @@ main {
     }
   }
 }
+.documentation-content {
+  font-size:1.2rem;
+  color: $primary;
+  padding-top:10px;
+
+  .documentation-title {
+    font-size:2.2rem;
+    font-weight: 600;
+    color: $alternative;
+  }
+}
+pre {
+  border:1px solid #dedede;
+  box-shadow:0 0 0 3px rgba(0,0,0,0.05);
+  background: $foreground;
+  padding:10px;
+  border-radius: 5px;
+}
