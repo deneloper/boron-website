@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
@@ -22,7 +23,7 @@ const IndexPage = () => (
 
       <div className="container">
         <div class="announcements">
-          08/08/2018 - <a href="">Alpha version released</a>
+          08/08/2018 - <Link to="/news">Alpha version released</Link>
         </div>
       </div>
 

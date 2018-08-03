@@ -27,13 +27,7 @@ const Layout = ({ children, data }) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        />
+        <Helmet title={data.site.siteMetadata.title} meta={appMeta} />
         <Header siteTitle={data.site.siteMetadata.title} />
         <section className="main">
           {children}

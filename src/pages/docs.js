@@ -9,10 +9,9 @@ const DocumentationPage = () => (
     query={graphql`
       query docsQuery {
         allMarkdownRemark (
-          filter: {frontmatter: {level: {eq: 0}}},
+          filter: {frontmatter: {level: {eq: 0}}, fileAbsolutePath: {regex: "/documentation/" }},
           sort: {fields: frontmatter___order}
-        )
-        {
+        ) {
           edges {
             node {
               html
@@ -23,7 +22,7 @@ const DocumentationPage = () => (
               frontmatter {
                 title
                 level
-                draft
+                draft,
                 slug
               }
             }
@@ -33,7 +32,6 @@ const DocumentationPage = () => (
     `}
     render={data => {
       var pages = data.allMarkdownRemark.edges
-      console.log(pages)
       return (
         <>
           <Layout>
