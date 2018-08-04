@@ -21,7 +21,15 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 740,
-            },
+            }
+          },
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {}
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,

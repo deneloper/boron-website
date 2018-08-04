@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 
+import 'prismjs/themes/prism-solarizedlight.css'
 import '../assets/styles/fonts.scss'
 import '../assets/styles/bootstrap.scss'
 import '../assets/styles/layout.scss'

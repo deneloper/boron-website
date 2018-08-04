@@ -136,7 +136,34 @@ main {
     font-weight: 600;
     color: $alternative;
   }
+  h3 {
+    font-size:1.5rem;
+    font-weight: 600;
+    color: $alternative;
+    margin-top:25px;
+  }
+  table {
+    width: 100%;
+    border:1px solid #dedede;
+    box-shadow:0 0 0 3px rgba(0,0,0,0.05);
+    background: $foreground;
+    border-radius: 5px;
+    margin-bottom:15px;
+
+    tr {
+      td, th {
+        padding:6px;
+        border-bottom:1px solid #dedede;
+        background: $foreground;
+      }
+    }
+  }
 }
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+    background-color: $foreground;
+}
+
 pre {
   border:1px solid #dedede;
   box-shadow:0 0 0 3px rgba(0,0,0,0.05);
