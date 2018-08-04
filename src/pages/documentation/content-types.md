@@ -3,7 +3,7 @@ title: "Content Types"
 slug: "content-types"
 draft: true
 level: 0
-order: 2
+order: 30
 ---
 
 Content Types are backbone of the Boron. Everything related to UI and API controlled by content types.

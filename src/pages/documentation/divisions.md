@@ -3,7 +3,7 @@ title: "Divisions"
 slug: "divisions"
 draft: true
 level: 0
-order: 1
+order: 20
 ---
 
 Divisions are used by content types for grouping. These are mostly cosmetic but required to build user interface correctly.
