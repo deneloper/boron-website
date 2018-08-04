@@ -8,7 +8,11 @@ order: 1
 
 Divisions are used by content types for grouping. These are mostly cosmetic but required to build user interface correctly.
 
-You can find division file under ```src/settings/divisions.js```
+You can find division file under
+
+```
+src/settings/divisions.js
+```
 
 ### Technical Details
 
