@@ -161,7 +161,8 @@ main {
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-    background-color: $foreground;
+    background-color: $foreground !important;
+    margin-bottom:15px;
 }
 
 pre {
